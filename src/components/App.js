@@ -14,13 +14,11 @@ class App extends React.Component {
           params: {
             q: term,
             part: "snippet",
-            type: 'video',
             maxResults: 5,
-            key: `${KEY}`
+            key: KEY
           }
         });
-
-    }
+    }    
     render() {
         return(
         <div className="ui container">
@@ -30,5 +28,5 @@ class App extends React.Component {
     }
 }
 
-
+// code not working as of 4/29/20. It has the covids
 export default App;
